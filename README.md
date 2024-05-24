@@ -6,4 +6,6 @@
 
 | Ejercicios |
 | :-: | 
-| [✔️ **Ejercicio 11**](Practica_Ejercicio/11-Main.c) | 
+| [✔️ **Ejercicio 11**](Practica_Ejercicios/11-Main.c) | 
+| [✔️ **Ejercicio 12**](Practica_Ejercicios/12-Main.c) | 
+| [✔️ **Ejercicio 13**](Practica_Ejercicios/13-Main.c) | 
