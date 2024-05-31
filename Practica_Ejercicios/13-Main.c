@@ -8,4 +8,5 @@ int main(void){
     printf("Ingrese la cantidad de mercancia comprada (en kg): ");
     scanf("%f", &cantidadkg);
     printf("El valor a pagar es: %.0f", preciokg*cantidadkg);
+    return 0;
 }
