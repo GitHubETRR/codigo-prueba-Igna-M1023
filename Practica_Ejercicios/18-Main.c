@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <math.h>
+#define _USE_MATH_DEFINES
+#include <math.H>
 
 int main(void){
     float radioc;

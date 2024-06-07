@@ -1,6 +1,6 @@
 #include <stdio.h>
-
-int main(void){
+//sin terminar
+/* int main(void){
     int prhoras,prminutos,prsegundos;
     int sehoras,seminutos,sesegundos;
     printf("Ingrese la primera hora a sumar de esta forma: Hora - Minutos - Segundos: \n");
@@ -9,3 +9,4 @@ int main(void){
     scanf("%d %d %d", &sehoras, &seminutos, &sesegundos);
     return 0;
 }
+*/
