@@ -1,14 +1,15 @@
 #include <stdio.h>
 
-void menu();
+int menu();
 
 int main(void){
     printf("Seleccione una de las siguientes opciones(1-4): ");
-    menu();
+    int opcion = menu();
+    printf("\nLa opcion seleccionada fue %d", opcion);
     return 0;
 }
 
-void menu(){
+int menu(){
     int opcion;
     printf("\nOpcion 1\n");
     printf("Opcion 2\n");
@@ -17,4 +18,5 @@ void menu(){
     scanf("%d", &opcion);
     if(opcion==1||opcion==2||opcion==3||opcion==4) printf("Ok");
     else printf("No ok");
+    return opcion;
 }
