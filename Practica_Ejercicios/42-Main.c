@@ -6,7 +6,7 @@ int main(void){
     printf("Ingrese un caracter: ");
     scanf("%c", &charing);
     char caracter = toupper(charing);
-    if(caracter==65 || caracter==69 || caracter==73 || caracter==79 || caracter==85){
+    if(caracter=='A' || caracter=='E' || caracter=='I' || caracter=='O' || caracter=='U'){
         printf("El caracter ingresado es una vocal");
     }
     else{

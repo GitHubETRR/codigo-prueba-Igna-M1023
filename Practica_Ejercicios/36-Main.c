@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#define valorkilo 800
 int main(void){
     int tipo,peso,costo;
     printf("Ingrese 1 si es corta distancia, 2 si es larga distancia: ");
@@ -8,10 +8,10 @@ int main(void){
     scanf("%d", &peso);
 
     if (tipo == 1) {
-        if(peso > 20)costo = 800 * (peso - 20);
+        if(peso > 20)costo = valorkilo * (peso - 20);
         costo+= 1500;
     } else if (tipo == 2) {
-        if(peso > 20)costo = 800 * ((peso-20)/5); 
+        if(peso > 20)costo = valorkilo * ((peso-20)/5); 
         costo+= 2000;
     }
     printf("El costo del envio seria %d", costo);

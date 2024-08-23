@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#define SUELDOBASICO 4500
 int main(void){
     int horastrabajo,antiguedad,sueldoneto;
     printf("Calculadora de sueldos\n");
@@ -7,7 +7,7 @@ int main(void){
     scanf("%d", &horastrabajo);
     printf("Ingrese la antiguedad: ");
     scanf("%d", &antiguedad);
-    sueldoneto = (4500*horastrabajo) + (1.02*antiguedad*4500);
+    sueldoneto = (SUELDOBASICO*horastrabajo)*(1.02*antiguedad);
     printf("El sueldo es de %d", sueldoneto);
     return 0;
 }
