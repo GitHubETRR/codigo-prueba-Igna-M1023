@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #define liminf 1
-#define limupp 30
+#define limupp 15
 #define N 5
 
 /*Ingresar una matriz, de NxN valores en forma aleatoria, entre 1 y 30, donde N es 5,
