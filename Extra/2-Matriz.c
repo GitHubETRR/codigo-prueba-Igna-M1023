@@ -4,7 +4,8 @@
 #define liminf 1
 #define limupp 15
 #define N 5
-
+// cuantas veces se repite el máximo dentro de la matriz y en que posiciones
+// (FOR IF == IGUAL AL MAX) GUARDARLO
 /*Ingresar una matriz, de NxN valores en forma aleatoria, entre 1 y 30, donde N es 5,
 informar el valor máximo y su ubicación*/
 

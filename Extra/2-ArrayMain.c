@@ -5,7 +5,7 @@
 #define limupp 20
 #define tamano 50
 
-
+// 
 // pasar a funcion
 
 int main(void){
