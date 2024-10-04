@@ -11,10 +11,10 @@
 // ataque basico
 typedef struct{
     char nombre[LARGE];
-    float dano;
-    float dano2;
-    float salud;
-    float salud2;
+    float danomin;
+    float danomax;
+    float saludmin;
+    float saludmax;
     float multdano;
     int usos;
 } caracteristicas_t;  
