@@ -8,8 +8,8 @@ int main(){
 }
 
 int ingresarProducto(){
-    int IDProd,condicion,cantidad;
-    float costo,costoventa;
+    int IDProd,condicion,cantidad,cantidadidproductos=0;
+    float costo,costoventa,gananciaproducto,gananciatotal=0;
     printf("Para salir del bucle pulse 0\n");
     do{
         printf("Ingrese el ID del producto (0-1000): ");
@@ -20,9 +20,15 @@ int ingresarProducto(){
             printf("Ingrese el precio de venta: ");
             scanf("%f", &costoventa);
             printf("Ingrese la cantidad vendida: ");
-            scanf("%f", &cantidad);
+            scanf("%d", &cantidad);
+            gananciaproducto = (costoventa-costo)*cantidad;
+            printf("La ganancia del producto es de %.2f\n", gananciaproducto);
+            gananciatotal+=gananciaproducto;
+            cantidadidproductos++;
         }
-        else printf("El ID ingresado no es valido.");
+        else printf("El ID ingresado no es valido.\n");
     }while(IDProd != 0);
+    printf("La ganancia total es de: %f\n", gananciatotal);
+    printf("El total de productos ingresados es de: %d", cantidadidproductos);
 }
 
