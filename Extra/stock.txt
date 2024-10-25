@@ -1,1 +1,2 @@
-350 Nutela 50.00 55.00 1351 Lays 76.50 77.00 56350 Nutela 50.00 55.00 1351 Lays 76.50 77.00 15
+ID Nombre Pre.C Pre.V Cantidad
+350 Nutela 55.00 60.00 1

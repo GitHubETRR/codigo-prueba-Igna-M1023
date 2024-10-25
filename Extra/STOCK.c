@@ -5,6 +5,8 @@
 int AddProducto();
 void LeerStock();
 void menu (void);
+//void EditarProducto();
+int SumProd();
 
 typedef enum{
     INGRESAR=1,
@@ -28,6 +30,15 @@ int main(void){
 }
 
 void menu (void){
+    FILE* config;
+    config = fopen("stock.txt", "r");
+    if(config == NULL){
+        fclose(config);
+        FILE* line;
+        line = fopen("stock.txt", "a");
+        fprintf(line, "%s %s %s %s %s", "ID", "Nombre", "Pre.C", "Pre.V", "Cantidad");
+        fclose(line);
+    }
     opciones_t op;
     producto productos[MAX_TYPEDEF]={0};
     do{
@@ -46,6 +57,7 @@ void menu (void){
                  LeerStock();
                 break;
             case ELIMINAR:
+                 SumProd();
                 break;
             case EDITAR:
                 break;
@@ -68,7 +80,7 @@ int AddProducto(producto productos[]){
     scanf(" %f", &productos[idbartemp].precioventa);
     printf("Ingrese la cantidad: ");
     scanf(" %d", &productos[idbartemp].cantidad);
-    fprintf(archivo, "%d %s %.2f %.2f %d", idbartemp, productos[idbartemp].nombre, productos[idbartemp].preciocompraprod, productos[idbartemp].precioventa, productos[idbartemp].cantidad);
+    fprintf(archivo, "\n%d %s %.2f %.2f %d", idbartemp, productos[idbartemp].nombre, productos[idbartemp].preciocompraprod, productos[idbartemp].precioventa, productos[idbartemp].cantidad);
     fclose(archivo);
 }
 
@@ -84,6 +96,25 @@ void LeerStock(){
             break;
         // displaying every characters
         printf("%c", display);
-    }
+    } // Otra forma de leerlo??
     fclose(archivo);
+} // Imprime todos los productos juntos, faltaria separarlos en una lista
+
+/*void EditarProducto(){
+    FILE* archivo;
+    archivo = fopen("stock.txt", "a+");
+}*/
+
+
+//
+int SumProd(){
+    int tempcom, tempvent;
+    FILE* archivo;
+    archivo = fopen("stock.txt", "r");
+    char buf[MAX_TYPEDEF];
+    int casino;
+    fseek(archivo, 31, SEEK_SET);
+    while (fscanf(archivo, "%*s %*s %s %*s %*s", casino) == 1){
+        printf("%d\n", casino);
+    }
 }
