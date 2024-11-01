@@ -8,6 +8,7 @@ int main(void){
     FILE* archivo;
     archivo = fopen("vocales.txt", "r");
     numvocales = contarVocales(archivo);
+    fclose(archivo);
     return 0;
 }
 
