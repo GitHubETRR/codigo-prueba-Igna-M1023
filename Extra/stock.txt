@@ -1,0 +1,2 @@
+ID Nombre Pre.C Pre.V Cantidad
+350 Nutela 55.00 60.00 1
